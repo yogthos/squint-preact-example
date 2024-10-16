@@ -1,0 +1,23 @@
+{ "name": "preact-app",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "dependencies": {
+    "jotai": "^2.12.2",
+    "preact": "^10.26.2"
+  },
+  "devDependencies": {
+    "@preact/preset-vite": "^2.10.1",
+    "vite": "^6.2.0",
+    "concurrently": "^9.0.1",
+    "squint-cljs": "latest"    
+  },
+  "scripts": {
+    "vite:dev": "vite",
+    "vite:build": "vite build",
+    "squint:compile": "squint compile",
+    "build": "concurrently \"npm run squint:compile\" \"npm run vite:build\"",
+    "squint:watch": "squint watch",
+    "dev": "concurrently \"npm run vite:dev\" \"npm run squint:watch\""
+  }
+}
