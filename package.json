@@ -4,13 +4,16 @@
   "type": "module",
   "dependencies": {
     "jotai": "^2.12.2",
-    "preact": "^10.26.2"
+    "preact": "^10.26.2",
+    "preact-router": "^4.1.2",
+    "@fortawesome/fontawesome-free": "^6.7.2",
+    "bulma": "^1.0.3"
   },
   "devDependencies": {
     "@preact/preset-vite": "^2.10.1",
     "vite": "^6.2.0",
     "concurrently": "^9.0.1",
-    "squint-cljs": "latest"    
+    "squint-cljs": "latest"
   },
   "scripts": {
     "vite:dev": "vite",
